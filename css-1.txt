@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+/* この中に書かれたものがコメントになります。 */
+
+width: 100px;
+
+position: absolute; 位置
+
+margin: 0 auto;　センター
+
+margin-right: auto;
+margin-left : auto;
+
+text-align: center;
+
+<img src="1600-694.jpg" width="" alt="">
+
+background-color
+
+font-size
+
+<a href=""></a>
+
+<a href=""　target="_blank"　alt=""></a>
+
+<a href=""><img src="" alt=""></a>
+
+font-size: 10px;
+
+<div class="sp">PCのとき非表示</div>
+<div class="pc">スマホのとき非表示</div>
+<div>どちらでも表示</div>
+
+color: #000000; 文字色
+
+強制的にCSSを適用させる!importantハック
+margin-left:10px!important;
+
+下揃え
+align-items: flex-end
+
+上下中央
+line-height: 30px;
+
+
+display noneで要素を非表示にする方法
+display:none;
+
+/* モバイルトップメニュー横スクロール */
+<style>
+#scroll-menu {
+    height: 40px;/* メニューの縦幅 */
+    background-color: #f7cabc;/* メニューの背景色 */
+}
+#scroll-menu .scroll-menu-inner {
+    list-style-type: none;
+    width: 1000px;/* メニューの横幅 */
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+#scroll-menu li {
+    float: left;
+    height: 100%;
+}
+#scroll-menu a {
+    display: block;
+    height: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    color: #000000;/* 文字色 */
+    font-size: 70%;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 40px;/* メニューの縦幅 */
+}
+#scroll-menu a:hover {
+    background-color: #f5f5f5;/* マウスホバー時の背景色 */
+}
+@media screen and (max-width: 1000px) {/* メニューの横幅 */
+    #scroll-menu {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+    }
+    #scroll-menu .scroll-menu-inner {
+        margin: 0;
+    }
+}
+</style>
+/* モバイルトップメニュー横スクロール */
+
+<!-- 混在コンテンツ -->
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">	
+<!-- 混在コンテンツ -->
+
+.navi_footer {
+    margin: 0 auto;
+    width: 1100px;
+    margin-top: 20px;
+}
+
+ .navi_footer1 {
+    display: flex;
+    /*justify-content: space-around;*/
+    margin-top: 25px;
+   }
+    .navi_footer2 {
+     list-style: none;
+     background-color: #000;
+     color: #fff;
+     background: rgba(51,112,121,0);
+     flex-grow: 1;
+     text-align: center;
+     font-size: 15px;
+   }
+
+    .navi_footer2  + .navi_footer2  {
+    border-left: 1px solid rgb(110, 110, 110);
+  }
+
+  .navi_footer ul li a:hover {
+    color: #FF9933;
+}
